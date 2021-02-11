@@ -1,0 +1,14 @@
+{
+    "caption": "Show",
+    "doc": "Run this action to actually show the connect card popup.",
+    "fields": {
+        "AAH": {
+            "caption": "User Email",
+            "doc": "Enter the email of the Stripe user whose card you'd like to add.",
+            "editor": "DynamicValue",
+            "name": "user_email",
+            "rank": 0,
+            "value": "text"
+        }
+    }
+}

@@ -1,0 +1,75 @@
+{
+    "add_is_visible": true,
+    "category": "visual elements",
+    "default_dim": {
+        "height": 20,
+        "width": 20
+    },
+    "display": "Stripe Add Card Popup",
+    "events": {
+        "AAE": {
+            "caption": "Card Added",
+            "doc": "Triggered after a card is added.",
+            "name": "card_added"
+        }
+    },
+    "fields": {
+        "AAK": {
+            "caption": "Logo",
+            "default_val": "//s3.amazonaws.com/appforest_uf/f1582510817382x904304750366005100/airdev-big-logo-square.png",
+            "doc": "Circular logo that appears at the top of the card popup.",
+            "editor": "DynamicValue",
+            "name": "logo",
+            "rank": 0,
+            "value": "image"
+        },
+        "AAL": {
+            "caption": "Popup Title",
+            "default_val": "AirDev",
+            "doc": "The title that appears below the logo on the card popup.",
+            "editor": "DynamicValue",
+            "name": "popup_title",
+            "rank": 1,
+            "value": "text"
+        },
+        "AAM": {
+            "caption": "Remember User",
+            "default_val": true,
+            "doc": "Checkbox to determine whether to remember the user",
+            "editor": "Checkbox",
+            "name": "remember_user",
+            "rank": 2
+        },
+        "AAO": {
+            "caption": "Button Text",
+            "default_val": "Save Card",
+            "doc": "Text of the button on the Stripe checkout popup",
+            "editor": "DynamicValue",
+            "name": "button_text",
+            "optional": false,
+            "rank": 3,
+            "value": "text"
+        },
+        "AAP": {
+            "caption": "Popup Description",
+            "doc": "Text that appears near the top of the popup, below the brand logo/icon and name",
+            "editor": "DynamicValue",
+            "name": "popup_description",
+            "optional": true,
+            "rank": 4,
+            "value": "text"
+        }
+    },
+    "icon": "ion-card",
+    "states": {
+        "AAD": {
+            "caption": "Token",
+            "doc": "Card token to be used for saving the card.",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "token",
+            "value": "text"
+        }
+    }
+}

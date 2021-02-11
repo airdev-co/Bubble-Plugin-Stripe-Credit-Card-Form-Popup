@@ -1,0 +1,11 @@
+{
+    "categories": {
+        "0": "payment"
+    },
+    "demo_page": "http://adstripeexpress.bubbleapps.io/version-test/index?debug_mode=true",
+    "description": "This plugin is only for collecting Stripe credit card data. It must be complemented by other Stripe API calls, either through the API Connector or through a different Stripe plugin.",
+    "image": "//s3.amazonaws.com/appforest_uf/f1582325917618x372542444243065340/twitter.png",
+    "license": "open_source",
+    "name": "Stripe Credit Card Form Popup",
+    "plugin_instructions": "Follow the instructions found here, under \"Manual implementations > Standard Payment Flow\". https://docs.airdev.co/functionality-reference/external-integrations/stripe#manual-implementations\n\n\nAs of May 18 2020, this reads:\n1. Run the Create customer call and save the returned ID on the User\n2. Open the credit card popup from the plugin using the Show action. \n3. Use the \"Card Added\" event from this plugin to save the Token returned onto the Stripe Customer using an \"Add payment source\" API call.\n4. Do the Charge user call, using the Customer ID above"
+}

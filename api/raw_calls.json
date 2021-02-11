@@ -1,0 +1,50 @@
+{
+    "auth": "none",
+    "calls": {
+        "AAR": {
+            "body": "",
+            "doc_link": "",
+            "headers": {
+                "AAV": {
+                    "key": "Authorization",
+                    "private": true,
+                    "visibility": "secret"
+                }
+            },
+            "initialized": true,
+            "method": "post",
+            "name": "Add payment source",
+            "params": {
+                "AAT": {
+                    "key": "source",
+                    "private": true,
+                    "querystring": true,
+                    "value": "tok_1GkGykBYQfF2KPiDjxmLuzRf"
+                }
+            },
+            "publish_as": "action",
+            "rank": 0,
+            "ret_value": "api.1582325815935x254221147962343420.plugin_api.AAR",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AAR\":{\"caption\":\"Add payment source\",\"fields\":{\"_p_id\":{\"ret_value\":\"text\",\"caption\":\"id\",\"path\":[\"id\"]},\"_p_object\":{\"ret_value\":\"text\",\"caption\":\"object\",\"path\":[\"object\"]},\"_p_address_city\":{\"ret_value\":\"text\",\"caption\":\"address_city\",\"path\":[\"address_city\"]},\"_p_address_country\":{\"ret_value\":\"text\",\"caption\":\"address_country\",\"path\":[\"address_country\"]},\"_p_address_line1\":{\"ret_value\":\"text\",\"caption\":\"address_line1\",\"path\":[\"address_line1\"]},\"_p_address_line1_check\":{\"ret_value\":\"text\",\"caption\":\"address_line1_check\",\"path\":[\"address_line1_check\"]},\"_p_address_line2\":{\"ret_value\":\"text\",\"caption\":\"address_line2\",\"path\":[\"address_line2\"]},\"_p_address_state\":{\"ret_value\":\"text\",\"caption\":\"address_state\",\"path\":[\"address_state\"]},\"_p_address_zip\":{\"ret_value\":\"text\",\"caption\":\"address_zip\",\"path\":[\"address_zip\"]},\"_p_address_zip_check\":{\"ret_value\":\"text\",\"caption\":\"address_zip_check\",\"path\":[\"address_zip_check\"]},\"_p_brand\":{\"ret_value\":\"text\",\"caption\":\"brand\",\"path\":[\"brand\"]},\"_p_country\":{\"ret_value\":\"text\",\"caption\":\"country\",\"path\":[\"country\"]},\"_p_customer\":{\"ret_value\":\"text\",\"caption\":\"customer\",\"path\":[\"customer\"]},\"_p_cvc_check\":{\"ret_value\":\"text\",\"caption\":\"cvc_check\",\"path\":[\"cvc_check\"]},\"_p_dynamic_last4\":{\"ret_value\":\"text\",\"caption\":\"dynamic_last4\",\"path\":[\"dynamic_last4\"]},\"_p_exp_month\":{\"ret_value\":\"number\",\"caption\":\"exp_month\",\"path\":[\"exp_month\"]},\"_p_exp_year\":{\"ret_value\":\"number\",\"caption\":\"exp_year\",\"path\":[\"exp_year\"]},\"_p_fingerprint\":{\"ret_value\":\"text\",\"caption\":\"fingerprint\",\"path\":[\"fingerprint\"]},\"_p_funding\":{\"ret_value\":\"text\",\"caption\":\"funding\",\"path\":[\"funding\"]},\"_p_last4\":{\"ret_value\":\"text\",\"caption\":\"last4\",\"path\":[\"last4\"]},\"_p_name\":{\"ret_value\":\"text\",\"caption\":\"name\",\"path\":[\"name\"]},\"_p_tokenization_method\":{\"ret_value\":\"text\",\"caption\":\"tokenization_method\",\"path\":[\"tokenization_method\"]}}}}",
+            "url": "https://api.stripe.com/v1/customers/[customer_id]/sources",
+            "url_params": {
+                "AAS": {
+                    "key": "customer_id",
+                    "private": true,
+                    "value": "cus_HIrT0O499lRWXr"
+                }
+            }
+        }
+    },
+    "human": "Stripe",
+    "shared_headers": {
+        "AAQ": {
+            "key": "Content-Type",
+            "private": true,
+            "value": "application/x-www-form-urlencoded",
+            "visibility": "hidden"
+        }
+    },
+    "token_param_name": "Authorization"
+}
